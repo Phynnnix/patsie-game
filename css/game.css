@@ -1,0 +1,143 @@
+.clickable{
+  cursor: pointer;
+}
+
+.container{
+  border: 1px solid black;
+}
+
+#root{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #DDFFDD;
+
+  font-family: monospace;
+
+  -webkit-user-select: none;
+     -moz-user-select: -moz-none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+
+
+.event.root{
+  position: absolute;
+  left: 22%;
+  right: 22%;
+  width: 56%;
+  top: 60%;
+  bottom: 0;
+  height: 40%;
+
+}
+
+.event.text{
+  position: relative;
+  width: 90%;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.event.buttons{
+  position: relative;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.event.button{
+    position: relative;
+    display: inline-block;
+      border: 5px groove grey;
+    margin: 8px;
+    padding: 8px;
+    max-width: 400px;
+}
+
+.event.button:hover{
+  border: 5px groove darkgrey;
+}
+
+.character.container{
+  position: absolute;
+  top: 0;
+  width: 22%;
+  height: 100%;
+}
+
+.character.teller.container{
+  left: 0;
+}
+
+.character.patsi.container{
+  right: 0;
+  text-align: right;
+}
+
+table.character{
+  position: relative;
+  width: 100%;
+}
+
+.location.root{
+  position: absolute;
+  left: 22%;
+  right: 22%;
+  width: 56%;
+  top: 0;
+  bottom: 0;
+  height: 60%;
+
+}
+
+canvas{
+  position: relative;
+  display: block;
+  height: 100%;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-crisp-edges;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+.invisible{
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+.tagspan{
+  font-weight: bold;
+  text-align: left;
+}
+
+.rayaspan{
+  color: yellow;
+  font-style: italic;
+}
+
+.patsispan{
+  color: #A0AFF0;
+  font-style: italic;
+}
+ body, #root{
+   overflow: hidden;
+ }
